@@ -145,7 +145,7 @@ In random sampling, hyperparameter values are randomly selected from the defined
 
 ### Results
 
-The best performing logistic regression model has an accuracy of **0.xxx**, achieved with the following parameters:
+The best performing logistic regression model has an accuracy of **0.783**, achieved with the following parameters:
 
 Hyperparameter | Value
 -------------- | -----

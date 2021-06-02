@@ -241,10 +241,21 @@ output
 Diagram: Endpoint
 
 ## Screen Recording
+
+ Screen Recording of the project is available on Google Drive:
+
+
+
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+The project didn't focus on performance of the model trained and deployed. Within a production environment performance is key for any application.
+Azure's Application Insights offers great possibilities to explore applications and diagnose problems.
+
+Application Insights can be enabled before or after the deployment and probides a visualization of error rates or response tinmes.
+
+Diagram Application Insights

@@ -98,12 +98,20 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 
 The best performing model is the **VotingEnsemble** with an accuracy of **0.8831**.
 
-A voting ensemble (or a “majority voting ensemble“) is an ensemble machine learning model that combines the predictions from multiple other models. It is a technique that may be used to improve model performance, ideally achieving better performance than any single model used in the ensemble. (Source: [How to Develop Voting Ensembles With Python](https://machinelearningmastery.com/voting-ensembles-with-python/))
+A voting ensemble (or a â€œmajority voting ensembleâ€œ) is an ensemble machine learning model that combines the predictions from multiple other models. It is a technique that may be used to improve model performance, ideally achieving better performance than any single model used in the ensemble. (Source: [How to Develop Voting Ensembles With Python](https://machinelearningmastery.com/voting-ensembles-with-python/))
 
 
-Diagram: Run RunDetails
+**Run Details**
 
-Diagram: Best Model
+[HyperDrive Run Details 1](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_run_details_1.png)
+
+[HyperDrive Run Details 2](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_run_details_2.png)
+
+
+
+**Best Model**
+
+[HyperDrive Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_best_model.png)
 
 
 Further progress could be made by evaluating other metrics instead of Accuracy, such as AUC. AutoML also offers much more possibilities for configuration than the ones used in this project. Additional improvement might be achieved by exploring these possibilities.
@@ -153,9 +161,17 @@ Regularization Strength | 1.0
 Max Iterations | 25
 
 
-Diagram: Run RunDetails
+**RunDetails**
 
-Diagram: Best Model
+[AutoML Run Details](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_run_details.png)
+
+
+**Best Model**
+
+[AutoML Best Model 1](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_best_model_1.png)
+
+[AutoML Best Model 2](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_best_model_2.png)
+
 
 Further improvement of the results might be made by choosing a different metric to be optimized (such as AUC) or by selecting another algorithm (like xgboost, etc). One could also replace Random Sampling by Bayesian Sampling, which selects the hyperparameters based on previous performance.
 
@@ -193,6 +209,11 @@ webservice = Model.deploy(workspace = ws, name = 'heart-failure-service', models
 
 webservice.wait_for_deployment(show_output = True)
 ```
+
+**Model Deployment**
+
+[Deploy Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/Deploy_best_model.png)
+
 
 Interaction with the model is possible as soon as the service is up and running.
 
@@ -237,19 +258,17 @@ output
 '{"result": [1, 0]}'
 ```
 
+**Consume Best Model**
 
-Diagram: Endpoint
+[Consume Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/Consume_best_model.png)
+
 
 ## Screen Recording
 
  Screen Recording of the project is available on Google Drive:
 
+[Capstone Project Screencast](https://drive.google.com/file/d/1Awq6KFDjnccQuJ5uSt7TWBoSssKyajQy/view?usp=sharing)
 
-
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
 
 ## Standout Suggestions
 
@@ -257,5 +276,3 @@ The project didn't focus on performance of the model trained and deployed. Withi
 Azure's Application Insights offers great possibilities to explore applications and diagnose problems.
 
 Application Insights can be enabled before or after the deployment and probides a visualization of error rates or response tinmes.
-
-Diagram Application Insights

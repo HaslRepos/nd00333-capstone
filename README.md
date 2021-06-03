@@ -103,15 +103,14 @@ A voting ensemble (or a “majority voting ensemble“) is an ensemble machine l
 
 **Run Details**
 
-[HyperDrive Run Details 1](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_run_details_1.png)
+![HyperDrive Run Details 1](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_run_details_1.png)
 
-[HyperDrive Run Details 2](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_run_details_2.png)
-
+![HyperDrive Run Details 2](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_run_details_2.png)
 
 
 **Best Model**
 
-[HyperDrive Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_best_model.png)
+![HyperDrive Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_best_model.png)
 
 
 Further progress could be made by evaluating other metrics instead of Accuracy, such as AUC. AutoML also offers much more possibilities for configuration than the ones used in this project. Additional improvement might be achieved by exploring these possibilities.
@@ -163,14 +162,14 @@ Max Iterations | 25
 
 **RunDetails**
 
-[AutoML Run Details](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_run_details.png)
+![AutoML Run Details](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_run_details.png)
 
 
 **Best Model**
 
-[AutoML Best Model 1](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_best_model_1.png)
+![AutoML Best Model 1](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_best_model_1.png)
 
-[AutoML Best Model 2](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_best_model_2.png)
+![AutoML Best Model 2](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/automl_best_model_2.png)
 
 
 Further improvement of the results might be made by choosing a different metric to be optimized (such as AUC) or by selecting another algorithm (like xgboost, etc). One could also replace Random Sampling by Bayesian Sampling, which selects the hyperparameters based on previous performance.
@@ -212,7 +211,7 @@ webservice.wait_for_deployment(show_output = True)
 
 **Model Deployment**
 
-[Deploy Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/Deploy_best_model.png)
+![Deploy Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/Deploy_best_model.png)
 
 
 Interaction with the model is possible as soon as the service is up and running.
@@ -260,14 +259,14 @@ output
 
 **Consume Best Model**
 
-[Consume Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/Consume_best_model.png)
+![Consume Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/Consume_best_model.png)
 
 
 ## Screen Recording
 
  Screen Recording of the project is available on Google Drive:
 
-[Capstone Project Screencast](https://drive.google.com/file/d/1Awq6KFDjnccQuJ5uSt7TWBoSssKyajQy/view?usp=sharing)
+![Capstone Project Screencast](https://drive.google.com/file/d/1Awq6KFDjnccQuJ5uSt7TWBoSssKyajQy/view?usp=sharing)
 
 
 ## Standout Suggestions

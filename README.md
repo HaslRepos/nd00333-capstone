@@ -160,7 +160,7 @@ Regularization Strength | 1.0
 Max Iterations | 100
 
 
-**RunDetails**
+**Run Details**
 
 ![HyperDrive Run Details 1](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_run_details_1.png)
 

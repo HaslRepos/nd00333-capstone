@@ -169,7 +169,7 @@ Max Iterations | 100
 
 **Best Model**
 
-![HyperDrive Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_best_model_2.png)
+![HyperDrive Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/hyperd_best_model_3.png)
 
 
 Further improvement of the results might be made by choosing a different metric to be optimized (such as AUC) or by selecting another algorithm (like xgboost, etc). One could also replace Random Sampling by Bayesian Sampling, which selects the hyperparameters based on previous performance.

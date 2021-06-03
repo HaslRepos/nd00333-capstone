@@ -266,7 +266,7 @@ output
 
  Screen Recording of the project is available on Google Drive:
 
-![Capstone Project Screencast](https://drive.google.com/file/d/1Awq6KFDjnccQuJ5uSt7TWBoSssKyajQy/view?usp=sharing)
+[Capstone Project Screencast](https://drive.google.com/file/d/1Awq6KFDjnccQuJ5uSt7TWBoSssKyajQy/view?usp=sharing)
 
 
 ## Standout Suggestions

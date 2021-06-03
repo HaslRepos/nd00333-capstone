@@ -96,7 +96,7 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 
 ### Results
 
-The best performing model is the **VotingEnsemble** with an accuracy of **0.8831**.
+The best performing model is the **VotingEnsemble** with an accuracy of **0.8730**.
 
 A voting ensemble (or a “majority voting ensemble“) is an ensemble machine learning model that combines the predictions from multiple other models. It is a technique that may be used to improve model performance, ideally achieving better performance than any single model used in the ensemble. (Source: [How to Develop Voting Ensembles With Python](https://machinelearningmastery.com/voting-ensembles-with-python/))
 

@@ -254,7 +254,7 @@ data = {"data": [{"age": 72.0,
 request = json.dumps(data)
 ```
 
-### Send the request to the deployed webservice
+### Retrieve the scoring_uri
 
 ```python
 scoring_uri = webservice.scoring_uri
@@ -265,12 +265,13 @@ scoring_uri
 'http://0b477168-9fe6-4a94-9b73-0e0d3c6d572f.southcentralus.azurecontainer.io/score'
 ```
 
+### Interact with the service via REST-API
+
 ```python
 api_key = 'bejplwsRsgnrOfSUgDQhJveLASrO9qW7' # Replace this with the API key for the web service
 headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 response = requests.post(scoring_uri, req_data, headers = headers)
 print(response.text)
-
 ```
 
 ```

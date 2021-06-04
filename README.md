@@ -100,10 +100,27 @@ The best performing model is the **VotingEnsemble** with an accuracy of **0.873*
 
 A voting ensemble (or a “majority voting ensemble“) is an ensemble machine learning model that combines the predictions from multiple other models. It is a technique that may be used to improve model performance, ideally achieving better performance than any single model used in the ensemble. (Source: [How to Develop Voting Ensembles With Python](https://machinelearningmastery.com/voting-ensembles-with-python/))
 
-Parameter | Value
--------------- | -----
-Regularization Strength | 100.0
-Max Iterations | 50
+The best model was achieved with the following paramters.
+
+Parameters | Values
+---------- | ------
+bootstrap | True
+ccp_alpha | 0.0
+class_weight | None
+criterion | 'gini'
+max_depth | None
+max_features | 0.8
+max_leaf_nodes | None
+max_samples | None
+min_impurity_decrease | 0.0
+min_impurity_split | None
+min_samples_leaf | 0.01
+min_samples_split | 0.056842105263157895
+min_weight_fraction_leaf | 0.0
+n_estimators | 400
+n_jobs | 1
+oob_score | True
+random_state | None
 
 
 **Run Details**

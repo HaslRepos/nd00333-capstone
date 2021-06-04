@@ -214,7 +214,15 @@ webservice.wait_for_deployment(show_output = True)
 ![Deploy Best Model](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/Deploy_best_model.png)
 
 
+**Endpoint up and running**
+
+![Endpoint Healthy](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/endpoint_1.png)
+
+![Application Insights enabled](https://github.com/HaslRepos/nd00333-capstone/blob/master/images/endpoint_2.png)
+
+
 Interaction with the model is possible as soon as the service is up and running.
+
 
 ### Prepare test data
 
@@ -249,11 +257,23 @@ request = json.dumps(data)
 ### Send the request to the deployed webservice
 
 ```python
-output = webservice.run(request)
-output
+scoring_uri = webservice.scoring_uri
+scoring_uri
+```
+
+```
+'http://0b477168-9fe6-4a94-9b73-0e0d3c6d572f.southcentralus.azurecontainer.io/score'
 ```
 
 ```python
+api_key = 'bejplwsRsgnrOfSUgDQhJveLASrO9qW7' # Replace this with the API key for the web service
+headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
+response = requests.post(scoring_uri, req_data, headers = headers)
+print(response.text)
+
+```
+
+```
 '{"result": [1, 0]}'
 ```
 

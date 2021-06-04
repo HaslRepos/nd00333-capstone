@@ -156,8 +156,8 @@ The best performing logistic regression model has an accuracy of **0.783**, achi
 
 Hyperparameter | Value
 -------------- | -----
-Regularization Strength | 1.0
-Max Iterations | 100
+Regularization Strength | 100.0
+Max Iterations | 50
 
 
 **Run Details**
